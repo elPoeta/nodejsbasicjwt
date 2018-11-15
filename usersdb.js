@@ -10,7 +10,7 @@ class Table{
     }
 
     static insert(user){
-        alasql(`INSERT INTO user (email, paswor) VALUES ("${user.email}","${user.password}")`);
+        alasql(`INSERT INTO user (email, password) VALUES ("${user.email}","${user.password}")`);
     }
 
     static userById(id){
